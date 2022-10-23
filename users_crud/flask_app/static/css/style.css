@@ -1,0 +1,55 @@
+* {
+    margin: auto;
+}
+
+.container {
+    border: 1px rgb(204, 204, 204) solid;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.home {
+    float: right;
+    padding: 2% 5%;
+}
+
+.actions {
+    display: flex;
+}
+
+#links {
+    flex: 1;
+}
+
+tr {
+    padding: 5px;
+}
+
+h1, .form-label, .form-control {
+    color: rgb(74, 74, 74);
+}
+
+#all_users {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-link {
+    border: 0px;
+    background: none;
+    color: rgb(40,123,252);
+    padding: 0px;
+
+}
+
+.changes {
+    display: flex;
+    padding: 2% 70% 2% 0%;
+}
+
+.show_user {
+    padding-left: 10px;
+}
+
+

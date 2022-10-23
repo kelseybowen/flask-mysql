@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>User</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mb-3">
+            <a href="/" class="home">Home</a>
+            <h1>User {{ user_info['id'] }}</h1>
+            <p>Name: {{ user_info['first_name']}} {{ user_info['last_name']}}</p>
+            <p>Email: {{ user_info['email']}}</p>
+            <p>Created On: {{ user_info['created_at']}}</p>
+            <p>Last Updated On: {{ user_info['updated_at']}}</p>
+        </div>
+        <span class="changes">
+            <a href="/edit/{{user_info['id']}}">Edit</a> <form action="/delete/{{user_info['id']}}" method="post"><button type="submit" class="btn-link">Delete</button></form>
+        </span>
+    </div>
+</body>
+</html>
