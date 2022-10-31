@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Dojo Show</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="dojo_show_container">
+                <div class="left_container">
+                    <h1 class="header">{{dojo_name}} Ninjas</h1>
+                    <table class=" table table-dark table-striped">
+                        <thead>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                            <th>Actions</th>
+                        </thead>
+                        <tbody>
+                            {% if dojo_info %}
+                                {% for ninja in dojo_info %}
+                                <tr>
+                                    <td>{{ninja.first_name}}</td>
+                                    <td>{{ninja.last_name}}</td>
+                                    <td>{{ninja.age}}</td>
+                                    <td>
+                                        <a href="/edit_ninja/{{ninja.id}}">edit</a> | <form action="/delete_ninja/{{ninja.id}}" method="post">
+                                            <button>delete</button>
+                                            <input type="hidden" name="ninja_dojo_id" value="{{ninja.dojo_id}}">
+                                        </form>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+                <form action="/"><button>Home</button></form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+* {
+    margin: 0 auto;
+    font-size: large;
+}
+
+/* ---------- DOJOS.HTML ---------- */
+
+.main {
+    margin-top: 5%;
+}
+
+.container {
+    display: flex;
+}
+
+.left_container, .right_container {
+    padding: 80px;
+    background-color: rgb(52,57,62);
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 15px;
+    background-color: #70F4E4;
+    box-shadow: black 2px 3px;
+    border: 1px black solid;
+}
+
+.create_dojo_button {
+    margin-top: 20px;
+}
+
+a {
+    color: #70F4E4;
+}
+
+.add_ninja_button {
+    margin-left: 70%;
+}
+
+/* ---------- DOJO_SHOW.HTML ---------- */
+
+.header {
+    text-align: center;
+    
+}
+
+.dojo_show_container {
+    width: 600px;
+    margin-left: 50px;
+}
+
+th, td {
+    padding: 20px 40px 0px 0px;
+    font-size: x-large;
+}
+
+/* ---------- NEW_NINJA.HTML ---------- */
+
+.new_ninja_form {
+    padding: 50px 80px;
+    margin-top: 50px;
+    background-color: rgb(52,57,62);
+    color: white;
+}
+
+.dojo_name_select option {
+    width: 200px;
+}
+
+.home_button {
+    margin-left: 46%;
+}

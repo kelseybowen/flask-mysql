@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    margin: 10%;
+    align-items: stretch;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+
+button, .create_new_author_button {
+    margin-top: 20px;
+}
+
+td {
+    padding-right: 20px;
+    padding-top: 5px;
+}

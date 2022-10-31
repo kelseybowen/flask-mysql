@@ -16,7 +16,7 @@ def read():
 def new():
     return render_template('create.html')
 
-@app.route('/create_user', methods=["POST","GET"])
+@app.route('/create_user', methods=["POST"])
 def create_user():
     data = {
         "first_name": request.form["first_name"],
